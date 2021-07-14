@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
+import { ThemeProvider } from "./ApplicationContext";
 
 export default function App({ children }) {
-  return children;
+	return <ThemeProvider>{children}</ThemeProvider>;
 }
