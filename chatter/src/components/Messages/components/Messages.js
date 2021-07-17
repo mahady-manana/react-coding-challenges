@@ -34,6 +34,7 @@ function Messages() {
 				{ message: bottyMessage, user: "bot", id: Date.now() },
 			]);
 			setLatestMessage("bot", bottyMessage);
+			setIsBottyTyping(false);
 			playReceive();
 		});
 		return () => {};
